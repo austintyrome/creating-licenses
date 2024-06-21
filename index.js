@@ -2,8 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const path = require('path');
+const colors = require('colors');
 // TODO: Create an array of questions for user input
+const readMeData = []
 const questions = [
     {
         type: 'input',
@@ -12,13 +13,33 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'email',
-        message: 'What is your email'
+        name: 'fileName',
+        message: 'What is then title of your readme?'
     },
     {
         type: 'input',
-        name:'project',
-        message: 'What is the name of your project?'
+        name:'discription',
+        message: 'What is a discreiption of your project?'
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'How do you install your program?'
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'How do you use your program?'
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email?'
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Input your github.'
     },
     {
         type: 'list',
@@ -31,10 +52,17 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+function writeToFile() {
+    fs.writeFile(`${readMeData[readMeData.length - 1].fileName.trim().toLowerCase()}.md`, generateMarkdown(readMeData), (err) => err ? console.log(colors.red(err)) : console.log(colors.green('Your ReadMe was generated')))
+  
   }
 
+  function getData(){
+    inquirer.prompt(questions).then((response) => {
+      readMeData.push(response);
+      writeToFile(readMeData);
+    })
+  }
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {

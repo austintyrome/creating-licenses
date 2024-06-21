@@ -1,8 +1,6 @@
-# undefined
-
 # Week-09-challenge
 
-## porject-starter
+## ReadMe Generator
 
 ## User Story
 

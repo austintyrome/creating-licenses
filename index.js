@@ -52,8 +52,8 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile() {
-    fs.writeFile(`${readMeData[readMeData.length - 1].fileName.trim().toLowerCase()}.md`, generateMarkdown(readMeData), (err) => err ? console.log(colors.red(err)) : console.log(colors.green('Your ReadMe was generated')))
+function writeToFile(fileName, content) {
+    fs.writeFile(fileName, content, (err) => err ? console.log(colors.red(err)) : console.log(colors.green('Your ReadMe was generated')))
   
   }
 

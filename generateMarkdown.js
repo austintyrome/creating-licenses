@@ -59,10 +59,10 @@ function renderLicenseSection(data) {
   }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(readMeData) {
+function generateMarkdown(data) {
   
 
-  const data = readMeData[readMeData.length - 1]  
+  // const data = readMeData[readMeData.length - 1]  
   return `
 # ${data.fileName} 
 ${renderLicenseSection(data)}
@@ -92,12 +92,12 @@ ${data.test}
 
 ## Contact
 - [GitHub](https://github.com/${data.github}) 
-${email}
+${data.email}
 
 
 ## License
 This project was created using:<br>
-${renderLicenseSection(data)}<br>
+${renderLicenseSection(data.license)}<br>
 For more information about this license, click the above link to view the details of the license.
 `;
 }

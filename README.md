@@ -40,4 +40,4 @@ Austin Godfrey
 This project uses the MIT liscense
 ```
 ## GitHub
-
+https://github.com/austintyrome/creating-licenses

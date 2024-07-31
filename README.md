@@ -33,7 +33,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Demo
 
-https://drive.google.com/file/d/1AMR7HiG-lTcqlh75hGhhh9e1tuwMerms/view?usp=drive_link
+https://drive.google.com/file/d/1AMR7HiG-lTcqlh75hGhhh9e1tuwMerms/view?usp=sharing
 
 ## Author
 ```

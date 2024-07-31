@@ -35,6 +35,11 @@ THEN I am taken to the corresponding section of the README
 
 https://drive.google.com/file/d/1AMR7HiG-lTcqlh75hGhhh9e1tuwMerms/view?usp=sharing
 
+## Example
+
+<img width="1144" alt="ReadMe" src="https://github.com/user-attachments/assets/c1e2be6f-ea00-4b12-be00-d164171be523">
+
+
 ## Author
 ```
 Austin Godfrey

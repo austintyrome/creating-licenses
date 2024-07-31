@@ -2,7 +2,7 @@
 
 ## Use
 ```
-Sometimes you need a qucik and simple way to make a ReadMe. Look no further than the Readme generator
+Sometimes you need a qucik and simple way to make a ReadMe. Look no further than the Readme generator. By answering a few questions you can get a basic ReadMe completed in no time.
 ```
 
 ## User Story

@@ -14,11 +14,11 @@ const questions = [
     {
         type: 'input',
         name: 'fileName',
-        message: 'What is then title of your readme?'
+        message: 'What is the title of your ReadMe?'
     },
     {
         type: 'input',
-        name:'discription',
+        name:'description',
         message: 'What is a discreiption of your project?'
     },
     {
@@ -57,12 +57,12 @@ function writeToFile(fileName, content) {
   
   }
 
-  function getData(){
-    inquirer.prompt(questions).then((response) => {
-      readMeData.push(response);
-      writeToFile(readMeData);
-    })
-  }
+  // function getData(){
+  //   inquirer.prompt(questions).then((response) => {
+  //     readMeData.push(response);
+  //     writeToFile(readMeData);
+  //   })
+  // }
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {

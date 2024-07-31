@@ -71,7 +71,7 @@ ${renderLicenseSection(data)}
 ${data.description} 
 
 ## Table of Contents
-- [Description](#description) 
+- [Description](#Description) 
 - [Installation](#installation)
 - [Contact](#contact) 
 - [Contributing](#contributing) 

@@ -84,7 +84,7 @@ ${data.installation}
 ${data.usage}
 
 ## Tests 
-
+${data.test}
 ### Testing our project
 
 ${data.test}
